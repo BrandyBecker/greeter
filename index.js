@@ -6,7 +6,7 @@ server.get('/', (req, res) => {
   res.status(200).json({ hello: 'Web 23' });
 });
 
-port = process.env.PORT||4000
-server.listen(PORT, () => {
+const port = process.env.PORT||4000
+server.listen(port, () => {
   console.log(`\n Server running on localhost: ${PORT} \n`);
 });
